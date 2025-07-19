@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarGazer</title>
+    <link rel="stylesheet" href="./fontawesome-6.5.0/css/all.min.css" />
+    <link href="./tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen h-full">
+    <div class="h-full p-5 bg-neutral-800 text-neutral-100 overflow-x-hidden">
+      <div class="flex flex-col space-y-8">
+        <div class="flex justify-space-between items-center">
+          <!-- Users Avatar-->
+          <div class="w-1/2 flex items-center space-x-2">
+            <img
+              src="./me.jpg"
+              alt="User Avatar"
+              role="button"
+              tabindex="0"
+              class="h-10 w-10 rounded-full object-cover border border-neutral-700 cursor-pointer overflow-hidden hover:border-blue-500 hover:border-2 hover:scale-110 transition focus:border-blue-500 focus:border-2 focus:scale-110"
+            />
+
+            <div
+              role="button"
+              tabindex="0"
+              class="h-10 w-10 rounded-full object-cover border border-neutral-700 flex justify-center items-center cursor-pointer overflow-hidden hover:border-blue-500 hover:border-2 hover:scale-110 transition focus:border-blue-500 focus:border-2 focus:scale-110"
+            >
+              <i class="fa-solid fa-user fa-2x"></i>
+            </div>
+
+            <div
+              role="button"
+              tabindex="0"
+              class="h-10 w-10 rounded-full object-cover border border-neutral-700 flex justify-center items-center cursor-pointer overflow-hidden hover:border-blue-500 hover:border-2 hover:scale-110 transition focus:border-blue-500 focus:border-2 focus:scale-110"
+            >
+              <i class="fa-solid fa-plus fa-2x"></i>
+            </div>
+          </div>
+          <!-- /users avatar-->
+
+          <!-- Login and Register -->
+          <div class="w-1/2 flex justify-end gap-3">
+            <button
+              class="cursor-pointer border-2 border-neutral-600 text-neutral-100 rounded-full px-4 py-2 font-semibold hover:border-blue-500 hover:scale-105 transition focus:border-blue-500 focus:scale-105"
+            >
+              Login
+            </button>
+
+            <button
+              class="cursor-pointer border-2 border-neutral-600 text-neutral-100 rounded-full px-4 py-2 font-semibold hover:border-blue-500 hover:scale-105 transition focus:border-blue-500 focus:scale-105"
+            >
+              Register
+            </button>
+          </div>
+          <!-- /login and register -->
+        </div>
+
+        <!-- StarGazer Logo -->
+        <div class="flex justify-center">
+          <img
+            role="button"
+            tabindex="0"
+            class="w-full lg:w-3xl rounded-lg transition-all duration-300 shadow-[0_4px_30px_rgba(255,255,255,0.05)] hover:shadow-[0_4px_40px_rgba(255,255,255,0.2)] focus:shadow-[0_4px_40px_rgba(255,255,255,0.2)]"
+            src="./stargazer.gif"
+            alt="StarGazer"
+          />
+        </div>
+        <!-- /stargazer logo -->
+
+        <!-- Search Input -->
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-4xl">
+            <i
+              class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400"
+            ></i>
+            <input
+              type="text"
+              placeholder="Search StarGazer or type a URL"
+              class="w-full pl-10 bg-neutral-700 text-neutral-100 placeholder-neutral-400 border border-neutral-600 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+            />
+          </div>
+        </div>
+        <!-- /search input -->
+
+        <!-- StarGazer Features -->
+        <div class="flex justify-center">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 lg:w-lg sm:w-xl w-full"
+          >
+            <!-- Web Browser -->
+            <div
+              class="p-4 group flex flex-col items-center space-y-3 cursor-pointer"
+            >
+              <div
+                role="button"
+                tabindex="0"
+                class="flex justify-center items-center w-22 h-22 rounded-full object-cover border border-neutral-700 group-hover:border-blue-500 group-hover:border-3 group-hover:scale-110 transition focus:border-blue-500 focus:border-3 focus:scale-110"
+              >
+                <i class="fa-solid fa-globe fa-3x"></i>
+              </div>
+              <span
+                class="text-neutral-100 text-md font-medium group-hover:text-neutral-300"
+                >Web Browser</span
+              >
+            </div>
+            <!-- /web browser -->
+
+            <!-- Netiquette -->
+            <div
+              class="p-4 group flex flex-col items-center space-y-3 cursor-pointer"
+            >
+              <div
+                role="button"
+                tabindex="0"
+                class="flex justify-center items-center w-22 h-22 rounded-full object-cover border border-neutral-700 group-hover:border-blue-500 group-hover:border-3 group-hover:scale-110 transition focus:border-blue-500 focus:border-3 focus:scale-110"
+              >
+                <i class="fa-solid fa-comment-dots fa-3x"></i>
+              </div>
+              <span
+                class="text-neutral-100 text-md font-medium group-hover:text-neutral-300"
+                >Netiquette</span
+              >
+            </div>
+            <!-- /netiquette -->
+
+            <!-- Email -->
+            <div
+              class="p-4 group flex flex-col items-center space-y-3 cursor-pointer"
+            >
+              <div
+                role="button"
+                tabindex="0"
+                class="flex justify-center items-center w-22 h-22 rounded-full object-cover border border-neutral-700 group-hover:border-blue-500 group-hover:border-3 group-hover:scale-110 transition focus:border-blue-500 focus:border-3 focus:scale-110"
+              >
+                <i class="fa-solid fa-envelope fa-3x"></i>
+              </div>
+              <span
+                class="text-neutral-100 text-md font-medium group-hover:text-neutral-300"
+                >Email</span
+              >
+            </div>
+            <!-- /email -->
+          </div>
+        </div>
+        <!-- /stargazer features -->
+      </div>
+    </div>
+  </body>
+</html>
